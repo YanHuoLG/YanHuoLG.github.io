@@ -456,7 +456,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    429
+                    634
                 </div>
                 
 
@@ -479,8 +479,8 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>最近将博客从旧的腾讯云服务器上迁移到了GitHubPages，顺带将原本的WordPress换成了Hexo。一是WordPress用着着实卡手，有点难受。二是相较于Hexo这种静态部署的网站，WordPress确实不算安全。原本想着偷懒才选择的腾讯云服务器+WordPress的预装组合，最后却反倒推动自己去从零到一建立一个静态网站。在过程中遇到过不少问题，网上能搜索到的教程总是有些地方存在些许问题，遂写一篇部署教程，以供后来者在网上检索教程时参考。</p>
-<h1 id="0-前期准备"><a href="#0-前期准备" class="headerlink" title="0.前期准备"></a>0.前期准备</h1><p>建立GitHubPages站点需要在GitHub中新建一个仓库用来存放站点文件，且仓库名字只能为username.github.io，访问时也使用 <a target="_blank" rel="noopener" href="https://username.github.io/">https://username.github.io</a> 进行访问。（这里我就默认你已经创建好了GitHub账户。）</p>
-<h1 id="1-本地站点建立"><a href="#1-本地站点建立" class="headerlink" title="1.本地站点建立"></a>1.本地站点建立</h1><p>我们使用Hexo部署的是静态网站，所以需要我们手动将站点的一些文件和后续写的文章手动上传到服务器上，所以我推荐使用GitHubPages来作为托管服务器，不管是初立站点还是后续更新，都能方便快捷的使用Git从本地推送到GitHub的仓库。<br>我们首先需要在自己的电脑上新建一个文件夹Blogs，推荐在非C磁盘的根目录下创建方便后续寻找，或者使用快捷方式从桌面指向文件夹（C盘大的直接创建在桌面也可以）。<br>文件夹创建完成后进入文件夹，右键鼠标，选择在终端中打开</p>
+<h1 id="0-前期准备"><a href="#0-前期准备" class="headerlink" title="0.前期准备"></a>0.前期准备</h1><p>建立GitHubPages站点需要在GitHub中新建一个仓库用来存放站点文件，且仓库名字只能为username.github.io，访问时也使用 <a target="_blank" rel="noopener" href="https://username.github.io/">https://username.github.io</a> 进行访问。完成站点建设之后可以在仓库设置里解析到自己的域名。（这里我就默认你已经创建好了GitHub账户。）本教程部署基于GitHubPages，所以需要安装git，安装完成后在终端输入git –version，如果显示版本号则说明安装成功。<br>Hexo是基于Node.js的静态博客框架，所以需要安装Node.js，安装完成后在终端输入node -v，如果显示版本号则说明安装成功。<br>Node.js和git在安装后一般会自动添加到系统环境变量中，所以不需要额外配置。如果没有配置环境变量，可以去配置一下。测试安装是否成功。<br><img src="/../images/p1.png" alt="检测版本" title="正确的显示信息"></p>
+<h1 id="1-本地站点建立"><a href="#1-本地站点建立" class="headerlink" title="1.本地站点建立"></a>1.本地站点建立</h1><p>我们使用Hexo部署的是静态网站，所以需要我们手动将站点的一些文件和后续写的文章手动上传到服务器上，所以我推荐使用GitHubPages来作为托管服务器，不管是初立站点还是后续更新，都能方便快捷的使用Git从本地推送到GitHub的仓库。<br>我们首先需要在自己的电脑上新建一个文件夹Blogs，推荐在非C磁盘的根目录下创建方便后续寻找，或者使用快捷方式从桌面指向文件夹（C盘大的直接创建在桌面也可以）。<br>文件夹创建完成后进入文件夹，右键鼠标，选择在终端中打开，输入以下命令安装Hexo：<code>bash   npm install -g hexo-cli</code> 安装完成后输入hexo -v，如果显示版本号则说明安装成功。</p>
 
                 
             </div>
@@ -590,18 +590,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2025/02/16/shi-yong-hexo-github-pages-bu-shu-jing-tai-ge-ren-bo-ke/">
+                <a href="/2025/02/28/jiang-githubpages-jie-xi-dao-teng-xun-yun-yu-ming/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="使用Hexo+GitHub Pages部署静态个人博客">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="将GitHubPages解析到腾讯云域名">
                         
-                        <span class="card-title">使用Hexo+GitHub Pages部署静态个人博客</span>
+                        <span class="card-title">将GitHubPages解析到腾讯云域名</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -611,9 +610,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-02-16
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2025-02-28
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -622,7 +621,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
